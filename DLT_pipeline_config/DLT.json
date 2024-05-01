@@ -1,0 +1,34 @@
+{
+    "id": "9364100d-d5cf-4980-aacf-ad32c8dc66e8",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "node_type_id": "Standard_DS3_v2",
+            "driver_node_type_id": "Standard_DS3_v2",
+            "num_workers": 0
+        },
+        {
+            "label": "updates",
+            "spark_conf": {
+                "spark.hadoop.fs.azure.account.key.jridatalakesng.dfs.core.windows.net": "{{secrets/jriscopekv/datalakekey1}}"
+            }
+        }
+    ],
+    "development": true,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Users/anupam_chand@jrisng.onmicrosoft.com/DLT_pipelines/Transformation_framework/For_github/DLT_pipeline"
+            }
+        }
+    ],
+    "name": "mygithub_dlt",
+    "edition": "ADVANCED",
+    "storage": "dbfs:/pipelines/9364100d-d5cf-4980-aacf-ad32c8dc66e8",
+    "target": "githubDLT",
+    "data_sampling": false
+}
