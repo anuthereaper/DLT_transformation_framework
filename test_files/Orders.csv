@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,total_amount
+9004,101,5004,1000
+9005,102,5005,2000
+9006,301,5006,0
